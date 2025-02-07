@@ -1,0 +1,10 @@
+pyproject.toml
+QAwithpdf/__init__.py
+QAwithpdf/data_ingestion.py
+QAwithpdf/embedding.py
+QAwithpdf/model_api.py
+QAwithpdf.egg-info/PKG-INFO
+QAwithpdf.egg-info/SOURCES.txt
+QAwithpdf.egg-info/dependency_links.txt
+QAwithpdf.egg-info/requires.txt
+QAwithpdf.egg-info/top_level.txt
