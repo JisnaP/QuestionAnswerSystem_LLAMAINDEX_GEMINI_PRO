@@ -3,6 +3,7 @@ from logger import logging
 from Exception import customexception
 from llama_index.core import SimpleDirectoryReader
 
+
 def load_data(data):
     """
     Loads data from a specified directory
@@ -14,8 +15,8 @@ def load_data(data):
     """
     try:
       logging.info(f"Data loading started ...")
-      loader=SimpleDirectoryReader(data)
-      documents=loader().load_data()
+      reader=SimpleDirectoryReader("data")
+      documents=reader.load_data()
       logging.info(f"logging completed")
       return documents
     except Exception as e:
