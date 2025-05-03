@@ -1,0 +1,7 @@
+venv
+template.py
+.git
+.gitignore
+.dockerignore
+
+__pycache__

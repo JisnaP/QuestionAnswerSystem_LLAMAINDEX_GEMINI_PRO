@@ -9,7 +9,7 @@ def processor():
         page_icon="🤔"
 
     )
-    doc=st.file_uploader("Upload your file here",accept_multiple_files=True)
+    doc=st.file_uploader("Upload your file here")
     st.header("QA with documents(Information Retrieval)")
     user_question=st.text_input("Enter your question here")
     

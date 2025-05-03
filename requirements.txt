@@ -3,7 +3,8 @@ google-generativeai
 llama-index-llms-gemini
 pypdf
 python-dotenv
-Ipython
+ipython
 llama-index-embeddings-gemini
 streamlit
+
 -e .

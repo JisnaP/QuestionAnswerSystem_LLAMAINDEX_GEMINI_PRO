@@ -1,0 +1,18 @@
+[2025-05-03 13:05:32,032] 18 root -INFO - Data loading started ...
+[2025-05-03 13:05:32,035] 32 root -ERROR - Exception in loading data
+Traceback (most recent call last):
+  File "C:\Users\jisna\QuestionAnswerSystem_LLAMAINDEX_GEMINI_PRO\QAwithpdf\data_ingestion.py", line 21, in load_data
+    filename = os.path.join(tempdir, uploaded_file.name)
+NameError: name 'os' is not defined
+[2025-05-03 13:06:09,763] 18 root -INFO - Data loading started ...
+[2025-05-03 13:06:09,765] 32 root -ERROR - Exception in loading data
+Traceback (most recent call last):
+  File "C:\Users\jisna\QuestionAnswerSystem_LLAMAINDEX_GEMINI_PRO\QAwithpdf\data_ingestion.py", line 21, in load_data
+    filename = os.path.join(tempdir, uploaded_file.name)
+AttributeError: 'list' object has no attribute 'name'
+[2025-05-03 13:07:06,214] 18 root -INFO - Data loading started ...
+[2025-05-03 13:07:07,932] 28 root -INFO - Data loading completed.
+[2025-05-03 13:07:07,933] 13 root -INFO - Model is loading...
+[2025-05-03 13:07:09,045] 10 root -INFO - downloading gemini embedding...
+[2025-05-03 13:07:09,045] 13 root -INFO - embedding downloaded successfully
+[2025-05-03 13:07:15,034] 17 root -INFO - Index created successfully

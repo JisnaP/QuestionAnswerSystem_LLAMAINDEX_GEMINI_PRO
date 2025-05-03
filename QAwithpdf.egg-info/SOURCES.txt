@@ -1,3 +1,4 @@
+README.md
 pyproject.toml
 QAwithpdf/__init__.py
 QAwithpdf/data_ingestion.py
