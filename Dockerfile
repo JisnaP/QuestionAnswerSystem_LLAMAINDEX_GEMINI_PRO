@@ -27,4 +27,4 @@ RUN mkdir -p logs notebook/storage
 EXPOSE 8501
 
 # Run the application
-CMD ["streamlit", "run", "StreamlitApp.py", "--server.port=8501", "--server.address=127.0.0.1"]
+CMD ["streamlit", "run", "StreamlitApp.py", "--server.port=8501", "--server.address=0.0.0.0"]
