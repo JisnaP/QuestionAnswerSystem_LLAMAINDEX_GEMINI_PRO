@@ -88,8 +88,11 @@ jobs:
          
       - name: Stop and remove container if running
         run: |
-         docker ps -q --filter "name=qaapp" | grep -q . && docker stop qaapp && docker rm -fv qaapp
-       
+         if docker ps -q --filter "name=qaapp" | grep -q .; then
+         docker stop qaapp
+         docker rm -fv qaapp
+         fi
+
       - name: Run Docker Image to serve users
         run: |
          docker run -d -p 8080:8080 --name=qaapp -e 'AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}' -e 'AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}' -e 'AWS_REGION=ap-south-1'  148761647497.dkr.ecr.ap-south-1.amazonaws.com/${{ secrets.ECR_REPOSITORY_NAME }}:latest
